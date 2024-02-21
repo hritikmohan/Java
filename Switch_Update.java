@@ -12,6 +12,7 @@ public class Switch_Update {
         }
 
         //      2. Strings can be used as expressions in switch
+        //          variables can also be initialized
         String day = "saturday";
         String result = "";
 
@@ -19,8 +20,35 @@ public class Switch_Update {
             case "saturday", "sunday" -> result = "7am";
             case "monday" -> result = "8am";
             default -> result = "6am";
+        
         }
-
         System.out.println(result);
+
+        // Alternative method to perform above operation:
+
+        String day1 = "monday";
+        String result1 = "";
+
+        result1 = switch(day1){
+            case "saturday", "sunday" -> "7am";
+            case "monday" -> "8am";
+            default -> "6am";
+        };
+
+        System.out.println(result1);
+        
+        // If -> is not to be used then the above operation can be performd as:
+        //use ---  [: yield] in place of [:]
+
+        String day2= "wednesday";
+        String result2 = "";
+
+        result2 = switch(day2){
+            case "saturday", "sunday" : yield "7am";
+            case "monday" : yield "8am";
+            default : yield "6am";
+        };
+
+        System.out.println(result2);
     }
 }
