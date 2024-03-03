@@ -7,8 +7,8 @@
         4. Default
 
 
-|            | **Private** | **Protected** | **Public** | **Default** |
-| ---------- | ----------- | ------------- | ---------- | ----------- |
+|  | **Private** | **Protected** | **Public** | **Default** |
+| ---- | ------ | ----- | --- | ----- |
 | Same Class | *Yes* | *Yes* | *Yes* | *Yes* | 
 | Same Package Subclass | *No* | *Yes* | *Yes* | *Yes* |
 | Same Package Non-Subclass | *No* | *Yes* | *Yes* | *Yes* |
