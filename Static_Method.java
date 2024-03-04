@@ -39,8 +39,8 @@ public class Static_Method {
 
         System.out.println();
         
-        obj1.show();
-        obj2.show();
+        obj1.show1();
+        obj2.show1();
         
         System.out.println();
 
