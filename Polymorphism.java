@@ -17,6 +17,9 @@ class B extends A{
     public void show(){
         System.out.println("In B show");
     }
+    public void config(){
+        System.out.println("in config");
+    }
 }
 
 class C extends A{
@@ -38,6 +41,10 @@ public class Polymorphism {
 
         obj = new B();
         obj.show();
+
+        // below statement will give error: config method not defined for A
+        // i.e., with reference of superclass and object of subclass only method of superclass can be called and method overriding is possible
+        // obj.config();
 
         obj = new C();
         obj.show();
