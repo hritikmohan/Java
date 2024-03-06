@@ -39,14 +39,14 @@ public class Polymorphism {
         A obj = new A();
         obj.show();
 
-        obj = new B();
-        obj.show();
+        A obj1 = new B();
+        obj1.show();
 
         // below statement will give error: config method not defined for A
         // i.e., with reference of superclass and object of subclass only method of superclass can be called and method overriding is possible
-        // obj.config();
+        obj1.config();
 
-        obj = new C();
-        obj.show();
+        A obj2 = new C();
+        obj2.show();
     }
 }
